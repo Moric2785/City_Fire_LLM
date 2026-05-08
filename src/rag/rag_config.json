@@ -1,0 +1,66 @@
+{
+  "knowledge_graph": {
+    "nodes_path": "./data/kg_nodes.csv",
+    "edges_path": "./data/kg_edges.csv",
+    "validation": {
+      "check_consistency": true,
+      "validate_entities": true,
+      "check_orphaned_entities": true
+    }
+  },
+  "embedder": {
+    "model_type": "TransE",
+    "embedding_dim": 128,
+    "training": {
+      "epochs": 20,
+      "batch_size": 128,
+      "learning_rate": 0.01,
+      "optimizer": "Adam",
+      "loss_function": "TransE"
+    }
+  },
+  "retriever": {
+    "query_encoder": "sentence-transformers/all-MiniLM-L6-v2",
+    "similarity_metric": "cosine",
+    "cache": {
+      "enabled": true,
+      "size": 1000,
+      "strategy": "LRU"
+    },
+    "search": {
+      "default_k": 5,
+      "max_k": 20,
+      "min_similarity_threshold": 0.1
+    }
+  },
+  "rag_model": {
+    "prompt_augmentation": {
+      "context_header": "% Retrieved Knowledge Context:",
+      "context_format": "bullet_points",
+      "max_context_length": 1000,
+      "include_similarity_scores": false
+    },
+    "fallback": {
+      "enable_fallback": true,
+      "fallback_message": "No relevant knowledge found."
+    }
+  },
+  "training": {
+    "rag_enabled": true,
+    "retrieval_k": 5,
+    "augment_training_data": true,
+    "augment_validation_data": true,
+    "augment_test_data": true
+  },
+  "evaluation": {
+    "retrieval_metrics": true,
+    "context_quality_metrics": true,
+    "end_to_end_metrics": true
+  },
+  "logging": {
+    "level": "INFO",
+    "log_retrieval_stats": true,
+    "log_augmented_prompts": false,
+    "save_retrieval_examples": true
+  }
+}

@@ -1,0 +1,451 @@
+================================================================================
+Example 1/10
+================================================================================
+<incident_key: GA_00701_02252019_1901583_0>
+Task Information:
+You are a helpful assistant designed to forecast fire severity for a specific building. Your primary task is to predict the probability of fire spread using the following classification options:
+[Fire confined in the room, Fire confined in the floor, Fire beyond the floor].
+Fire severity can be categorized as confined in the room (lowest, localized), confined in the floor (moderate, same floor spread), or beyond floor (high, multi-floor or building spread).
+
+% Basic Building Information:
+Structure: The building has <2.0> stories above ground and <0.0> story below ground.
+Area: The total projected area is <500.0> square feet.
+Structure Type: The building structure is <Enclosed building>.
+
+%Data correction criteria:
+Please apply the following NFIRS data rules:
+If a fire starts on the roof or an exterior wall, or if the structure is a one-room building, the outcome should be classified as 'Fire confined in the building'.
+For any single-story building, the classification 'Fire confined in the floor' is equivalent to 'Fire confined in the building'.
+%Incident Conditions:
+Weather: At the time of the incident, the ambient temperature was <5.2°C> with <48.0>% relative humidity.
+Fire Time: The fire occurred in <winter> during the <morning>.
+Fire Location: The fire originated in the <Kitchen or cooking area>.
+Floor: The fire started on floor <2.0>.
+Heat Source: The heat source was <Heat from Hot or Smoldering Object>.
+First Ignited: The first item to ignite was <Soft Goods and Wearing Apparel (e.g., mattress, bedding, clothing)>.
+Material Type: The material type is <Fabric, Textiles, Fur>.
+Detector: The detector status was <None Present>.
+Suppression System: The automatic extinguishing system (AES) status was <None Present>.
+Human Factor: The primary human factor contributing to ignition was <Possibly impaired by alcohol or drugs>.
+Cause: The reported cause of ignition is <Exposure>.
+Response Time: Fire department response time was approximately <5.0 min>.
+
+% Community Context:
+This building is situated in a community where the median income level is <national average>.
+The median monthly rent level is <national average>.
+Housing occupancy level is <national average>.
+Population with bachelor's degree or higher level is <below national average>. 
+Elderly population (62+) level is <below national average>. 
+Black or African American population level is <national average>.
+
+% Task Prompt:
+Based on all the information provided, predict the fire spread status from the given options.
+Answer: Fire spread status: <
+================================================================================
+
+
+================================================================================
+Example 2/10
+================================================================================
+<incident_key: GA_00701_03182019_1902156_0>
+Task Information:
+You are a helpful assistant designed to forecast fire severity for a specific building. Your primary task is to predict the probability of fire spread using the following classification options:
+[Fire confined in the room, Fire confined in the floor, Fire beyond the floor].
+Fire severity can be categorized as confined in the room (lowest, localized), confined in the floor (moderate, same floor spread), or beyond floor (high, multi-floor or building spread).
+
+% Basic Building Information:
+Structure: The building has <2.0> stories above ground and <0.0> story below ground.
+Area: The total projected area is <1400.0> square feet.
+Structure Type: The building structure is <Enclosed building>.
+
+%Data correction criteria:
+Please apply the following NFIRS data rules:
+If a fire starts on the roof or an exterior wall, or if the structure is a one-room building, the outcome should be classified as 'Fire confined in the building'.
+For any single-story building, the classification 'Fire confined in the floor' is equivalent to 'Fire confined in the building'.
+%Incident Conditions:
+Weather: At the time of the incident, the ambient temperature was <12.7°C> with <32.0>% relative humidity.
+Fire Time: The fire occurred in <spring> during the <night>.
+Fire Location: The fire originated in the <Sleeping room or bedroom for 1-2 persons>.
+Floor: The fire started on floor <1.0>.
+Heat Source: The heat source was <Heat from Powered Equipment>.
+First Ignited: The first item to ignite was <Structural Component or Finish (e.g., exterior siding, interior wall covering)>.
+Material Type: The material type is <Other Material>.
+Detector: The detector status was <None Present>.
+Suppression System: The automatic extinguishing system (AES) status was <None Present>.
+Human Factor: The primary human factor contributing to ignition was <Asleep>.
+Cause: The reported cause of ignition is <Exposure>.
+Response Time: Fire department response time was approximately <9.0 min>.
+
+% Community Context:
+This building is situated in a community where the median income level is <national average>.
+The median monthly rent level is <national average>.
+Housing occupancy level is <above national average>.
+Population with bachelor's degree or higher level is <below national average>. 
+Elderly population (62+) level is <below national average>. 
+Black or African American population level is <national average>.
+
+% Task Prompt:
+Based on all the information provided, predict the fire spread status from the given options.
+Answer: Fire spread status: <
+================================================================================
+
+
+================================================================================
+Example 3/10
+================================================================================
+<incident_key: GA_00701_04282019_1903249_0>
+Task Information:
+You are a helpful assistant designed to forecast fire severity for a specific building. Your primary task is to predict the probability of fire spread using the following classification options:
+[Fire confined in the room, Fire confined in the floor, Fire beyond the floor].
+Fire severity can be categorized as confined in the room (lowest, localized), confined in the floor (moderate, same floor spread), or beyond floor (high, multi-floor or building spread).
+
+% Basic Building Information:
+Structure: The building has <1.0> stories above ground and <1.0> story below ground.
+Area: The total projected area is <1500.0> square feet.
+Structure Type: The building structure is <Enclosed building>.
+
+%Data correction criteria:
+Please apply the following NFIRS data rules:
+If a fire starts on the roof or an exterior wall, or if the structure is a one-room building, the outcome should be classified as 'Fire confined in the building'.
+For any single-story building, the classification 'Fire confined in the floor' is equivalent to 'Fire confined in the building'.
+%Incident Conditions:
+Weather: At the time of the incident, the ambient temperature was <20.7°C> with <40.0>% relative humidity.
+Fire Time: The fire occurred in <spring> during the <night>.
+Fire Location: The fire originated in the <Chimney - exterior>.
+Floor: The fire started on floor <1.0>.
+Heat Source: The heat source was <Radiated, Conducted Heat from Operating Equipment>.
+First Ignited: The first item to ignite was <Adornment, Recreational Material, Signs (e.g., Christmas tree, decoration)>.
+Material Type: The material type is <Natural Product>.
+Detector: The detector status was <Present>.
+Suppression System: The automatic extinguishing system (AES) status was <None Present>.
+Human Factor: The primary human factor contributing to ignition was <Asleep>.
+Cause: The reported cause of ignition is <Unintentional>.
+Response Time: Fire department response time was approximately <8.0 min>.
+
+% Community Context:
+This building is situated in a community where the median income level is <below national average>.
+The median monthly rent level is <below national average>.
+Housing occupancy level is <national highest>.
+Population with bachelor's degree or higher level is <national average>. 
+Elderly population (62+) level is <national average>. 
+Black or African American population level is <national average>.
+
+% Task Prompt:
+Based on all the information provided, predict the fire spread status from the given options.
+Answer: Fire spread status: <
+================================================================================
+
+
+================================================================================
+Example 4/10
+================================================================================
+<incident_key: GA_00701_07302019_1906026_0>
+Task Information:
+You are a helpful assistant designed to forecast fire severity for a specific building. Your primary task is to predict the probability of fire spread using the following classification options:
+[Fire confined in the room, Fire confined in the floor, Fire beyond the floor].
+Fire severity can be categorized as confined in the room (lowest, localized), confined in the floor (moderate, same floor spread), or beyond floor (high, multi-floor or building spread).
+
+% Basic Building Information:
+Structure: The building has <1.0> stories above ground and <0.0> story below ground.
+Area: The total projected area is <1500.0> square feet.
+Structure Type: The building structure is <Enclosed building>.
+
+%Data correction criteria:
+Please apply the following NFIRS data rules:
+If a fire starts on the roof or an exterior wall, or if the structure is a one-room building, the outcome should be classified as 'Fire confined in the building'.
+For any single-story building, the classification 'Fire confined in the floor' is equivalent to 'Fire confined in the building'.
+%Incident Conditions:
+Weather: At the time of the incident, the ambient temperature was <22.5°C> with <95.0>% relative humidity.
+Fire Time: The fire occurred in <summer> during the <afternoon>.
+Fire Location: The fire originated in the <Sleeping room or bedroom for 1-2 persons>.
+Floor: The fire started on floor <1.0>.
+Heat Source: The heat source was <Heat from Powered Equipment>.
+First Ignited: The first item to ignite was <Furniture and Utensils (e.g., upholstered sofa, cabinetry)>.
+Material Type: The material type is <Wood or Paper - Processed>.
+Detector: The detector status was <None Present>.
+Suppression System: The automatic extinguishing system (AES) status was <None Present>.
+Human Factor: The primary human factor contributing to ignition was <Asleep>.
+Cause: The reported cause of ignition is <Unintentional>.
+Response Time: Fire department response time was approximately <7.0 min>.
+
+% Community Context:
+This building is situated in a community where the median income level is <national average>.
+The median monthly rent level is <below national average>.
+Housing occupancy level is <national average>.
+Population with bachelor's degree or higher level is <below national average>. 
+Elderly population (62+) level is <national average>. 
+Black or African American population level is <national average>.
+
+% Task Prompt:
+Based on all the information provided, predict the fire spread status from the given options.
+Answer: Fire spread status: <
+================================================================================
+
+
+================================================================================
+Example 5/10
+================================================================================
+<incident_key: GA_00701_11042019_1908938_0>
+Task Information:
+You are a helpful assistant designed to forecast fire severity for a specific building. Your primary task is to predict the probability of fire spread using the following classification options:
+[Fire confined in the room, Fire confined in the floor, Fire beyond the floor].
+Fire severity can be categorized as confined in the room (lowest, localized), confined in the floor (moderate, same floor spread), or beyond floor (high, multi-floor or building spread).
+
+% Basic Building Information:
+Structure: The building has <2.0> stories above ground and <1.0> story below ground.
+Area: The total projected area is <1800.0> square feet.
+Structure Type: The building structure is <Enclosed building>.
+
+%Data correction criteria:
+Please apply the following NFIRS data rules:
+If a fire starts on the roof or an exterior wall, or if the structure is a one-room building, the outcome should be classified as 'Fire confined in the building'.
+For any single-story building, the classification 'Fire confined in the floor' is equivalent to 'Fire confined in the building'.
+%Incident Conditions:
+Weather: At the time of the incident, the ambient temperature was <4.7°C> with <87.0>% relative humidity.
+Fire Time: The fire occurred in <fall> during the <morning>.
+Fire Location: The fire originated in the <Bathroom or washroom>.
+Floor: The fire started on floor <2.0>.
+Heat Source: The heat source was <Heat from Powered Equipment>.
+First Ignited: The first item to ignite was <Furniture and Utensils (e.g., upholstered sofa, cabinetry)>.
+Material Type: The material type is <Fabric, Textiles, Fur>.
+Detector: The detector status was <None Present>.
+Suppression System: The automatic extinguishing system (AES) status was <None Present>.
+Cause: The reported cause of ignition is <Unintentional>.
+Response Time: Fire department response time was approximately <6.0 min>.
+
+% Community Context:
+This building is situated in a community where the median income level is <national average>.
+The median monthly rent level is <national average>.
+Housing occupancy level is <national average>.
+Population with bachelor's degree or higher level is <below national average>. 
+Elderly population (62+) level is <below national average>. 
+Black or African American population level is <national average>.
+
+% Task Prompt:
+Based on all the information provided, predict the fire spread status from the given options.
+Answer: Fire spread status: <
+================================================================================
+
+
+================================================================================
+Example 6/10
+================================================================================
+<incident_key: GA_00701_11162019_1909249_0>
+Task Information:
+You are a helpful assistant designed to forecast fire severity for a specific building. Your primary task is to predict the probability of fire spread using the following classification options:
+[Fire confined in the room, Fire confined in the floor, Fire beyond the floor].
+Fire severity can be categorized as confined in the room (lowest, localized), confined in the floor (moderate, same floor spread), or beyond floor (high, multi-floor or building spread).
+
+% Basic Building Information:
+Structure: The building has <1.0> stories above ground and <0.0> story below ground.
+Area: The total projected area is <1200.0> square feet.
+Structure Type: The building structure is <Enclosed building>.
+
+%Data correction criteria:
+Please apply the following NFIRS data rules:
+If a fire starts on the roof or an exterior wall, or if the structure is a one-room building, the outcome should be classified as 'Fire confined in the building'.
+For any single-story building, the classification 'Fire confined in the floor' is equivalent to 'Fire confined in the building'.
+%Incident Conditions:
+Weather: At the time of the incident, the ambient temperature was <19.1°C> with <46.0>% relative humidity.
+Fire Time: The fire occurred in <fall> during the <evening>.
+Fire Location: The fire originated in the <Chimney - exterior>.
+Floor: The fire started on floor <1.0>.
+Heat Source: The heat source was <Heat from Powered Equipment>.
+First Ignited: The first item to ignite was <Storage Supplies (e.g., box, carton, pallet)>.
+Material Type: The material type is <Wood or Paper - Processed>.
+Detector: The detector status was <None Present>.
+Suppression System: The automatic extinguishing system (AES) status was <None Present>.
+Human Factor: The primary human factor contributing to ignition was <Possibly impaired by alcohol or drugs>.
+Cause: The reported cause of ignition is <Unintentional>.
+Response Time: Fire department response time was approximately <5.0 min>.
+
+% Community Context:
+This building is situated in a community where the median income level is <national average>.
+The median monthly rent level is <national average>.
+Housing occupancy level is <national average>.
+Population with bachelor's degree or higher level is <below national average>. 
+Elderly population (62+) level is <below national average>. 
+Black or African American population level is <national average>.
+
+% Task Prompt:
+Based on all the information provided, predict the fire spread status from the given options.
+Answer: Fire spread status: <
+================================================================================
+
+
+================================================================================
+Example 7/10
+================================================================================
+<incident_key: GA_00701_12032019_1909797_0>
+Task Information:
+You are a helpful assistant designed to forecast fire severity for a specific building. Your primary task is to predict the probability of fire spread using the following classification options:
+[Fire confined in the room, Fire confined in the floor, Fire beyond the floor].
+Fire severity can be categorized as confined in the room (lowest, localized), confined in the floor (moderate, same floor spread), or beyond floor (high, multi-floor or building spread).
+
+% Basic Building Information:
+Structure: The building has <1.0> stories above ground and <0.0> story below ground.
+Area: The total projected area is <1500.0> square feet.
+Structure Type: The building structure is <Enclosed building>.
+
+%Data correction criteria:
+Please apply the following NFIRS data rules:
+If a fire starts on the roof or an exterior wall, or if the structure is a one-room building, the outcome should be classified as 'Fire confined in the building'.
+For any single-story building, the classification 'Fire confined in the floor' is equivalent to 'Fire confined in the building'.
+%Incident Conditions:
+Weather: At the time of the incident, the ambient temperature was <9.7°C> with <49.0>% relative humidity.
+Fire Time: The fire occurred in <winter> during the <evening>.
+Floor: The fire started on floor <1.0>.
+Detector: The detector status was <None Present>.
+Suppression System: The automatic extinguishing system (AES) status was <None Present>.
+Cause: The reported cause of ignition is <Exposure>.
+Response Time: Fire department response time was approximately <6.0 min>.
+
+% Community Context:
+This building is situated in a community where the median income level is <below national average>.
+The median monthly rent level is <below national average>.
+Housing occupancy level is <national highest>.
+Population with bachelor's degree or higher level is <national average>. 
+Elderly population (62+) level is <national average>. 
+Black or African American population level is <national average>.
+
+% Task Prompt:
+Based on all the information provided, predict the fire spread status from the given options.
+Answer: Fire spread status: <
+================================================================================
+
+
+================================================================================
+Example 8/10
+================================================================================
+<incident_key: GA_00701_12122019_1910097_0>
+Task Information:
+You are a helpful assistant designed to forecast fire severity for a specific building. Your primary task is to predict the probability of fire spread using the following classification options:
+[Fire confined in the room, Fire confined in the floor, Fire beyond the floor].
+Fire severity can be categorized as confined in the room (lowest, localized), confined in the floor (moderate, same floor spread), or beyond floor (high, multi-floor or building spread).
+
+% Basic Building Information:
+Structure: The building has <1.0> stories above ground and <0.0> story below ground.
+Area: The total projected area is <1600.0> square feet.
+Structure Type: The building structure is <Enclosed building>.
+
+%Data correction criteria:
+Please apply the following NFIRS data rules:
+If a fire starts on the roof or an exterior wall, or if the structure is a one-room building, the outcome should be classified as 'Fire confined in the building'.
+For any single-story building, the classification 'Fire confined in the floor' is equivalent to 'Fire confined in the building'.
+%Incident Conditions:
+Weather: At the time of the incident, the ambient temperature was <1.7°C> with <86.0>% relative humidity.
+Fire Time: The fire occurred in <winter> during the <night>.
+Fire Location: The fire originated in the <Kitchen or cooking area>.
+Floor: The fire started on floor <0.0>.
+Heat Source: The heat source was <Heat from Hot or Smoldering Object>.
+First Ignited: The first item to ignite was <Soft Goods and Wearing Apparel (e.g., mattress, bedding, clothing)>.
+Material Type: The material type is <Fabric, Textiles, Fur>.
+Detector: The detector status was <None Present>.
+Suppression System: The automatic extinguishing system (AES) status was <None Present>.
+Human Factor: The primary human factor contributing to ignition was <Possibly impaired by alcohol or drugs>.
+Cause: The reported cause of ignition is <Intentional>.
+Response Time: Fire department response time was approximately <8.0 min>.
+
+% Community Context:
+This building is situated in a community where the median income level is <national average>.
+The median monthly rent level is <national average>.
+Housing occupancy level is <above national average>.
+Population with bachelor's degree or higher level is <below national average>. 
+Elderly population (62+) level is <below national average>. 
+Black or African American population level is <national average>.
+
+% Task Prompt:
+Based on all the information provided, predict the fire spread status from the given options.
+Answer: Fire spread status: <
+================================================================================
+
+
+================================================================================
+Example 9/10
+================================================================================
+<incident_key: GA_00703_01192019_2190060_0>
+Task Information:
+You are a helpful assistant designed to forecast fire severity for a specific building. Your primary task is to predict the probability of fire spread using the following classification options:
+[Fire confined in the room, Fire confined in the floor, Fire beyond the floor].
+Fire severity can be categorized as confined in the room (lowest, localized), confined in the floor (moderate, same floor spread), or beyond floor (high, multi-floor or building spread).
+
+% Basic Building Information:
+Structure: The building has <1.0> stories above ground and <0.0> story below ground.
+Area: The total projected area is <1100.0> square feet.
+Structure Type: The building structure is <Enclosed building>.
+On-site Material: The most significant on-site material is <Soft Goods, Wearing Apparel>.
+Storage Use: The material storage use is <Fabric, Textiles, Fur>.
+
+%Data correction criteria:
+Please apply the following NFIRS data rules:
+If a fire starts on the roof or an exterior wall, or if the structure is a one-room building, the outcome should be classified as 'Fire confined in the building'.
+For any single-story building, the classification 'Fire confined in the floor' is equivalent to 'Fire confined in the building'.
+%Incident Conditions:
+Weather: At the time of the incident, the ambient temperature was <11.7°C> with <87.0>% relative humidity.
+Fire Time: The fire occurred in <winter> during the <afternoon>.
+Fire Location: The fire originated in the <Laundry area>.
+Floor: The fire started on floor <1.0>.
+Heat Source: The heat source was <Heat from Powered Equipment>.
+First Ignited: The first item to ignite was <Other Material Compounded with Oil (e.g., linoleum, oilcloth)>.
+Spread Item: The primary item contributing to the fire's spread was <Soft Goods, Wearing Apparel>.
+Spread Material: The material contributing to spread was <Fabric, Textiles, Fur>.
+Detector: The detector status was <Present>.
+Suppression System: The automatic extinguishing system (AES) status was <None Present>.
+Cause: The reported cause of ignition is <Unintentional>.
+Response Time: Fire department response time was approximately <4.0 min>.
+
+% Community Context:
+This building is situated in a community where the median income level is <national average>.
+The median monthly rent level is <below national average>.
+Housing occupancy level is <national average>.
+Population with bachelor's degree or higher level is <below national average>. 
+Elderly population (62+) level is <national average>. 
+Black or African American population level is <national average>.
+
+% Task Prompt:
+Based on all the information provided, predict the fire spread status from the given options.
+Answer: Fire spread status: <
+================================================================================
+
+
+================================================================================
+Example 10/10
+================================================================================
+<incident_key: GA_00703_02052019_1190162_0>
+Task Information:
+You are a helpful assistant designed to forecast fire severity for a specific building. Your primary task is to predict the probability of fire spread using the following classification options:
+[Fire confined in the room, Fire confined in the floor, Fire beyond the floor].
+Fire severity can be categorized as confined in the room (lowest, localized), confined in the floor (moderate, same floor spread), or beyond floor (high, multi-floor or building spread).
+
+% Basic Building Information:
+Structure: The building has <1.0> stories above ground and <0.0> story below ground.
+Area: The total projected area is <0.0> square feet.
+Structure Type: The building structure is <Enclosed building>.
+
+%Data correction criteria:
+Please apply the following NFIRS data rules:
+If a fire starts on the roof or an exterior wall, or if the structure is a one-room building, the outcome should be classified as 'Fire confined in the building'.
+For any single-story building, the classification 'Fire confined in the floor' is equivalent to 'Fire confined in the building'.
+%Incident Conditions:
+Weather: At the time of the incident, the ambient temperature was <23.7°C> with <60.0>% relative humidity.
+Fire Time: The fire occurred in <winter> during the <afternoon>.
+Fire Location: The fire originated in the <Bathroom or washroom>.
+Floor: The fire started on floor <1.0>.
+Heat Source: The heat source was <Heat from Powered Equipment>.
+Detector: The detector status was <None Present>.
+Suppression System: The automatic extinguishing system (AES) status was <None Present>.
+Cause: The reported cause of ignition is <Unintentional>.
+Response Time: Fire department response time was approximately <3.0 min>.
+
+% Community Context:
+This building is situated in a community where the median income level is <national average>.
+The median monthly rent level is <below national average>.
+Housing occupancy level is <national average>.
+Population with bachelor's degree or higher level is <below national average>. 
+Elderly population (62+) level is <national average>. 
+Black or African American population level is <national average>.
+
+% Task Prompt:
+Based on all the information provided, predict the fire spread status from the given options.
+Answer: Fire spread status: <
+================================================================================
