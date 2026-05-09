@@ -43,34 +43,6 @@ FireLLM addresses the critical need for accurate fire spread prediction in emerg
 - **Error Analysis**: Comprehensive error pattern identification and reporting
 - **Prediction Confidence**: Confidence scores for model predictions
 
-## 🏗️ System Architecture
-
-```
-FireLLM/
-├── src/
-│   ├── fllm/                    # Core FireLLM components
-│   │   ├── model_classifier.py  # Main model implementation
-│   │   ├── data_processor.py    # Data preprocessing and loading
-│   │   ├── prompt_generator.py  # Fire incident prompt generation
-│   │   ├── trainer_classifier.py # Training pipeline
-│   │   └── utils.py             # Utility functions
-│   └── rag/                     # RAG system components
-│       ├── knowledge_graph.py   # Knowledge graph management
-│       ├── retriever.py         # Semantic retrieval system
-│       ├── rag_model.py         # RAG model integration
-│       ├── embedder.py          # Text embedding generation
-│       └── trainer_rag.py       # RAG training pipeline
-├── scripts/
-│   ├── train.py                 # Main training script
-│   └── train_rag.py            # RAG-specific training
-├── data/
-│   ├── processed_data/          # Preprocessed datasets
-│   └── raw_data/               # Raw input data
-├── models/                      # Trained model checkpoints
-├── output/                      # Training outputs and results
-└── configs/                     # Configuration files
-```
-
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -99,8 +71,8 @@ pip install -r requirements.txt
 
 3. **Download Llama 3.1 8B model**:
 ```bash
-# Download Llama 3.1 8B Instruct model to the specified path
-# Update model path in configuration files as needed
+# Download Llama 3.1-8B model from Huggingface
+python scripts/model.py
 ```
 
 ### Basic Usage
@@ -109,13 +81,13 @@ pip install -r requirements.txt
 
 ```bash
 # Single configuration training
-python scripts/train.py --mode single
+python scripts/train_v2.py --mode single
 
 # Grid search for hyperparameter optimization
-python scripts/train.py --mode grid
+python scripts/train_v2.py --mode grid
 
 # Learning rate search
-python scripts/train.py --mode lr
+python scripts/train_v2.py --mode lr
 ```
 
 #### 2. RAG-Enhanced Training
@@ -137,6 +109,15 @@ python scripts/train.py --mode test \
 ```
 
 ## 📋 Data Format
+
+Raw data and processed data can be downloaded from https://1drv.ms/f/c/a87668e1c9948d82/IgBGAikPbr2eTI2v3B9LLanCAW_sFqPGixNph0n7Xs0gsn0?e=j3R44v
+
+### Testing dataset
+
+```bash
+# Testing dataset from 433_wo_la_wash.csv including examples of input prompts and output labels
+test_set.json
+```
 
 ### Input Data Structure
 
