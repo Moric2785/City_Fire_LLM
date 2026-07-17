@@ -1,0 +1,13 @@
+1. 读取 [
+    "data/processed_data/atlanta_data.csv",
+    "data/processed_data/chicago_data.csv",
+    "data/processed_data/dallas_data.csv",
+    "data/processed_data/houston_data.csv",
+    "data/processed_data/la_data.csv"
+     ]，
+提取 accident year 在 2019-2022 的数据，合并为 unbalanced.csv
+2. 对合并后的数据按 FIRE_SPRD 列做比例平衡抽样，生成 balanced.csv
+   - 组A: FIRE_SPRD == 2
+   - 组B: FIRE_SPRD == 3
+   - 组C: FIRE_SPRD in [4, 5]
+   - 比例 A:B:C = 5:2:3，不重复抽样，基准为三组中数量最少的一组
