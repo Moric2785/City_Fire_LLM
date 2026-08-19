@@ -11,3 +11,7 @@
    - 组B: FIRE_SPRD == 3
    - 组C: FIRE_SPRD in [4, 5]
    - 比例 A:B:C = 5:2:3，不重复抽样，基准为三组中数量最少的一组
+
+# 2026/08/19 更新
+删掉所有：class 3 BLDG_ABOVE= 0 and class 3 BLDG_BELOW= 0
+把class 3 BLDG_ABOVE= 1的label 改为4
